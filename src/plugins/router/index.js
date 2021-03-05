@@ -10,15 +10,20 @@ import Login from '@/pages/login'
 Vue.use(VueRouter)
 
 const router = new VueRouter({
-    mode: 'history',
+    mode: 'hash',
     base: process.env.BASE_URL,
     routes: [{
             path: '/not-found',
             name: 'NotFound',
             component: NotFound,
-        }
+        },
         {
             path: '',
+            name: 'Landing',
+            component: Landing
+        },
+        {
+            path: '/',
             name: 'Login',
             component: Login
         },

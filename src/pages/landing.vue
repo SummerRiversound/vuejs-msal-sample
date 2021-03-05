@@ -1,20 +1,18 @@
 <template>
-    <div>
-    </div>
+  <div></div>
 </template>
 <script>
 export default {
-    name: 'Landing',
-    mounted() {
-        try {
-            this.$router.push('dashboard')
-        } catch(error) {
-            if(this.$route.path!= '/login') this.$router.push("login")
-        }
+  name: "Landing",
+  mounted() {
+    try {
+      this.$router.push("");
+    } catch (error) {
+      console.log(error);
     }
-}
+  },
+};
 </script>
 
 <style>
-
 </style>
